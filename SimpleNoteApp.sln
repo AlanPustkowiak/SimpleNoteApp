@@ -5,6 +5,8 @@ VisualStudioVersion = 17.7.34202.233
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleNoteApp", "SimpleNoteApp\SimpleNoteApp.csproj", "{252D60F7-D4A9-464E-B0C0-80B09A852987}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelLibrary", "ModelLibrary\ModelLibrary.csproj", "{03700406-41E5-4EA3-9FE7-6DD6EFCBC653}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{252D60F7-D4A9-464E-B0C0-80B09A852987}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{252D60F7-D4A9-464E-B0C0-80B09A852987}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{252D60F7-D4A9-464E-B0C0-80B09A852987}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03700406-41E5-4EA3-9FE7-6DD6EFCBC653}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03700406-41E5-4EA3-9FE7-6DD6EFCBC653}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03700406-41E5-4EA3-9FE7-6DD6EFCBC653}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03700406-41E5-4EA3-9FE7-6DD6EFCBC653}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
