@@ -13,25 +13,33 @@ namespace SimpleNoteApp
 {
     public partial class NoteView : Form
     {
-        public NoteModel Model { get; set; }
-
-        public NoteView()
+        public MainMenu mainForm { get; set; }
+        public NoteView(MainMenu mainForm)
         {
+            this.mainForm = mainForm;
             InitializeComponent();
+
         }
 
         private void cancelButton_Click(object sender, EventArgs e)
         {
-            Close();
+            (this.mainForm as MainMenu).Show();
+            this.Close();
         }
 
         public void saveButton_Click(object sender, EventArgs e)
         {
             // najprawdopodobniej utwórz tutaj ten notemodel i przekaż go do listy na głównym menu
-            Model.NoteTitle = TitleTexBox.Text.ToString();
-            Model.NoteContent = DescriptionTextBox.Text;
-            MessageBox.Show(Model.NoteTitle, Model.NoteContent);
-            Close();
+            NoteModel model = new NoteModel();
+            model.NoteTitle = TitleTexBox.Text;
+            model.NoteContent = DescriptionTextBox.Text;
+            mainForm.note = model;
+
+            mainForm.RefreshMethod();
+
+            (this.mainForm as MainMenu).Show();
+            this.Close();
+
         }
     }
 }
