@@ -7,11 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ModelLibrary;
 
 namespace SimpleNoteApp
 {
     public partial class NoteView : Form
     {
+        public NoteModel Model { get; set; }
+
         public NoteView()
         {
             InitializeComponent();
@@ -22,9 +25,12 @@ namespace SimpleNoteApp
             Close();
         }
 
-        private void saveButton_Click(object sender, EventArgs e)
+        public void saveButton_Click(object sender, EventArgs e)
         {
             // najprawdopodobniej utwórz tutaj ten notemodel i przekaż go do listy na głównym menu
+            Model.NoteTitle = TitleTexBox.Text.ToString();
+            Model.NoteContent = DescriptionTextBox.Text;
+            MessageBox.Show(Model.NoteTitle, Model.NoteContent);
             Close();
         }
     }

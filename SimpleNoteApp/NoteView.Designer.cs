@@ -28,21 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.inputBox = new System.Windows.Forms.TextBox();
+            this.DescriptionTextBox = new System.Windows.Forms.TextBox();
             this.saveButton = new System.Windows.Forms.Button();
             this.cancelButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.TitleTexBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // inputBox
+            // DescriptionTextBox
             // 
-            this.inputBox.Location = new System.Drawing.Point(30, 164);
-            this.inputBox.Multiline = true;
-            this.inputBox.Name = "inputBox";
-            this.inputBox.Size = new System.Drawing.Size(876, 417);
-            this.inputBox.TabIndex = 0;
+            this.DescriptionTextBox.Location = new System.Drawing.Point(30, 164);
+            this.DescriptionTextBox.Multiline = true;
+            this.DescriptionTextBox.Name = "DescriptionTextBox";
+            this.DescriptionTextBox.Size = new System.Drawing.Size(876, 417);
+            this.DescriptionTextBox.TabIndex = 0;
             // 
             // saveButton
             // 
@@ -74,12 +74,12 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "Descripton";
             // 
-            // textBox1
+            // TitleTexBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(30, 111);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(874, 20);
-            this.textBox1.TabIndex = 4;
+            this.TitleTexBox.Location = new System.Drawing.Point(30, 111);
+            this.TitleTexBox.Name = "TitleTexBox";
+            this.TitleTexBox.Size = new System.Drawing.Size(874, 20);
+            this.TitleTexBox.TabIndex = 4;
             // 
             // label2
             // 
@@ -97,11 +97,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(932, 593);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.TitleTexBox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cancelButton);
             this.Controls.Add(this.saveButton);
-            this.Controls.Add(this.inputBox);
+            this.Controls.Add(this.DescriptionTextBox);
             this.Name = "NoteView";
             this.Text = "Form2";
             this.ResumeLayout(false);
@@ -111,11 +111,11 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox inputBox;
+        private System.Windows.Forms.TextBox DescriptionTextBox;
         private System.Windows.Forms.Button saveButton;
         private System.Windows.Forms.Button cancelButton;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox TitleTexBox;
         private System.Windows.Forms.Label label2;
     }
 }

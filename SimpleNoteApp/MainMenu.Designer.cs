@@ -80,7 +80,7 @@
 
         private System.Windows.Forms.Button addNewButton;
         private System.Windows.Forms.Button deleteButton;
-        private System.Windows.Forms.ListBox notesList;
+        public System.Windows.Forms.ListBox notesList;
     }
 }
 

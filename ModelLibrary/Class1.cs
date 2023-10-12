@@ -8,12 +8,7 @@ namespace ModelLibrary
 {
     public class NoteModel
     {
-        public NoteModel(string title, string content)
-        {
-            this.NoteTitle = title;
-            this.NoteContent = content;
-        }
-        private string NoteTitle { get; set; }
-        private string NoteContent { get; set; }
+        public string NoteTitle { get; set; }
+        public string NoteContent { get; set; }
     }
 }

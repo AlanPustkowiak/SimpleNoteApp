@@ -19,12 +19,19 @@ namespace SimpleNoteApp
         public MainMenu()
         {
             InitializeComponent();
+
+            WireUpList();
+        }
+
+        private void WireUpList()
+        {
+           
         }
 
         private void addNewButton_Click(object sender, EventArgs e)
         {
             NoteView n = new NoteView();
-            n.Show();
+            n.Show(); 
         }
 
         private void deleteButton_Click(object sender, EventArgs e)
@@ -34,7 +41,7 @@ namespace SimpleNoteApp
 
         private void notesList_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            
         }
     }
 }
